@@ -4,6 +4,7 @@
   "description": "Programa para creacion de web components",
   "main": "index.js",
   "scripts": {
+    "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/JuanDVejarano/web-components-init/issues"
   },
-  "homepage": "https://github.com/JuanDVejarano/web-components-init#readme"
+  "homepage": "https://github.com/JuanDVejarano/web-components-init#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
