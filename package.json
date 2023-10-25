@@ -1,0 +1,23 @@
+{
+  "name": "web-components-init",
+  "version": "1.0.0",
+  "description": "Programa para creacion de web components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanDVejarano/web-components-init.git"
+  },
+  "keywords": [
+    "Web",
+    "Components"
+  ],
+  "author": "Juan D Vejarano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuanDVejarano/web-components-init/issues"
+  },
+  "homepage": "https://github.com/JuanDVejarano/web-components-init#readme"
+}
