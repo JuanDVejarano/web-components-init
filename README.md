@@ -12,3 +12,7 @@ Me permite encapsuar el codigo dentro de un document-fragment
 ## 3 Shadow Dom
 
 Me permite encapsular los componentes para hacer un ecosistema porpio e independiente del elemento
+
+## Content Slot
+
+nos ayuda a manioular datos
