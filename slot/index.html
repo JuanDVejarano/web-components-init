@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom elements</title>
+</head>
+<style>
+    h2 {
+        color: blue;
+    }
+</style>
+
+<body>
+    <h2>titulo por fuera del dom de los web components</h2>
+    <my-element-aslot>Este texto saldra en la etiqueta slot, texto puesto fuera del componente</my-element-aslot>
+    <my-element-multislot>
+        <span slot="title">Este texto saldra en la etiqueta slot1(title), texto puesto fuera del componente</span>
+        <span slot="texto">Este texto saldra en la etiqueta slot2(texto), texto puesto fuera del componente</span>
+    </my-element-multislot>
+
+</body>
+
+<script type="module" src="./my-component-aSlot.js"></script>
+<script type="module" src="./my-component-multiSlot.js"></script>
+
+</html>
