@@ -50,8 +50,14 @@ class MyComponent extends HTMLElement {
         const styles = `
             <style>
                 :host {
+                    --primary-color: red;
+                    --secondary-color: blue;
+                    --tertiary-color: yellow;
+                    --cuarternary-color: purple;
+                    --text1-color: white;
+                    --text2-color: #20ff00;
                     display: inline-block;
-                    background-color: red;
+                    background-color: var(--primary-color);
                     min-width: 400px;
                     margin: 10px;
                     padding: 20px;
@@ -61,24 +67,24 @@ class MyComponent extends HTMLElement {
                     padding: 0;
                 }
                 :host(.blue) {
-                    background-color: blue;
+                    background-color: var(--secondary-color);
                 }
                 :host([yellow]) {
-                    background-color: yellow;
+                    background-color: var(--tertiary-color);
                 }
                 :host-context(article.card) {
                     display: block;
                     max-width: 100%;
-                    background-color: purple;
+                    background-color: var(--cuarternary-color);
                 }
                 ::slotted(span) {
                     font-size: 30px;
                 }
                 ::slotted(.texto1) {
-                    color: white;
+                    color: var(--text1-color);
                 }
                 ::slotted(.texto2) {
-                    color: #20ff00;
+                    color: var(--text2-color);
                 }
             </style>
         `;
