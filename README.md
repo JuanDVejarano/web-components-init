@@ -61,3 +61,5 @@ podremos ver un ejemplo en la carpeta **Atributos-changeCallback**
 ## disconnectedCallback
 
 me permite eliminar el componente del DOM cuando se deje de usar el componente, lo cula es muy util para liberar memoria.
+
+poderemos ver un ejemplo en la carpeta **disconnectedCallback** en este archivo esta todos los ciclos de vida del componente y se demuestra cuando salta el disconnectedCallback por medio de console.log, tambien se puede ver mas documentacion en **https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_custom_elements#usando_callbacks_de_ciclo_de_vida**
