@@ -56,4 +56,8 @@ podremos ver un ejemplo en la carpeta **Atributos**
 
 nos permite estar a la escucha de los cambios de los atributos
 
-podremos ver un ejemplo en la carpeta **Atributos**
+podremos ver un ejemplo en la carpeta **Atributos-changeCallback**
+
+## disconnectedCallback
+
+me permite eliminar el componente del DOM cuando se deje de usar el componente, lo cula es muy util para liberar memoria.
