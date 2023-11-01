@@ -51,3 +51,9 @@ podremos ver un ejemplo en la carpeta **Slot**
 Los atributos nos permiten mandar propiedades a los componentes.
 
 podremos ver un ejemplo en la carpeta **Atributos**
+
+### Atribute change CallBack
+
+nos permite estar a la escucha de los cambios de los atributos
+
+podremos ver un ejemplo en la carpeta **Atributos**
