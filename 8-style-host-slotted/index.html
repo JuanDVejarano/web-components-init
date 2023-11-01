@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <my-component titulo="Titulo componente 1" parrafo="parrafo componente 1"></my-component>
+    <my-component titulo="Titulo componente 2" parrafo="parrafo componente 2 con estilos de clase" class="blue">
+    </my-component>
+    <my-component titulo="Titulo componente 3" parrafo="parrafo componente 3 con estilos de atributo" yellow>
+    </my-component>
+
+    <article class="card">
+        <my-component titulo="Titulo componente 3" parrafo="parrafo componente 3 con estilos de contexto">
+            <span class="texto1" slot="texto1">Texto de slot texto 1</span>
+            <span class="texto2" slot="texto2">Texto de slot texto 2</span>
+        </my-component>
+    </article>
+
+</body>
+
+<script type="module" src="./my-component.js"></script>
+
+</html>

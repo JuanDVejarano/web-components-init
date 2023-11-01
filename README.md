@@ -69,3 +69,15 @@ podremos ver un ejemplo en la carpeta **6-Atributos-changeCallback**
 me permite eliminar el componente del DOM cuando se deje de usar el componente, lo cula es muy util para liberar memoria.
 
 poderemos ver un ejemplo en la carpeta **7-disconnectedCallback** en este archivo esta todos los ciclos de vida del componente y se demuestra cuando salta el disconnectedCallback por medio de console.log, tambien se puede ver mas documentacion en **https://developer.mozilla.org/es/docs/Web/API/Web_components/Using_custom_elements#usando_callbacks_de_ciclo_de_vida**
+
+## estilos del componente y seudo selectores y seudoclases
+
+### :host
+
+Este selector nos permite acceder a los estilos del componente padre
+
+### ::slotted
+
+Este selector nos permite acceder a los estilos del componente hijo o a los slots
+
+podremos ver un ejemplo de :host y ::slotted en la carpeta **8-style-host-slotted**
