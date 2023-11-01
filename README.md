@@ -45,3 +45,9 @@ tambien puede tener nombres los slots
 ```
 
 podremos ver un ejemplo en la carpeta **Slot**
+
+## Atributos
+
+Los atributos nos permiten mandar propiedades a los componentes.
+
+podremos ver un ejemplo en la carpeta **Atributos**
