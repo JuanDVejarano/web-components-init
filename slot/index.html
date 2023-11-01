@@ -13,10 +13,16 @@
 </style>
 
 <body>
-    <h2>titulo por fuera del dom</h2>
-    <my-element>Este texto saldra en la etiqueta slot puesta fuera del componente</my-element>
-    <script type="module" src="./my-component.js"></script>
+    <h2>titulo por fuera del dom de los web components</h2>
+    <my-element-aslot>Este texto saldra en la etiqueta slot, texto puesto fuera del componente</my-element-aslot>
+    <my-element-multislot>
+        <span slot="title">Este texto saldra en la etiqueta slot1(title), texto puesto fuera del componente</span>
+        <span slot="texto">Este texto saldra en la etiqueta slot2(texto), texto puesto fuera del componente</span>
+    </my-element-multislot>
 
 </body>
+
+<script type="module" src="./my-component-aSlot.js"></script>
+<script type="module" src="./my-component-multiSlot.js"></script>
 
 </html>
