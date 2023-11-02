@@ -1,0 +1,44 @@
+:host {
+    --primary-color: red;
+    --secondary-color: blue;
+    --tertiary-color: yellow;
+    --cuarternary-color: purple;
+    --text1-color: white;
+    --text2-color: #20ff00;
+    display: inline-block;
+    background-color: var(--primary-color);
+    min-width: 400px;
+    margin: 10px;
+    padding: 20px;
+
+    &:host * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+:host(.blue) {
+    background-color: var(--secondary-color);
+}
+
+:host([yellow]) {
+    background-color: var(--tertiary-color);
+}
+
+:host-context(article.card) {
+    display: block;
+    max-width: 100%;
+    background-color: var(--cuarternary-color);
+}
+
+::slotted(span) {
+    font-size: 30px;
+}
+
+::slotted(.texto1) {
+    color: var(--text1-color);
+}
+
+::slotted(.texto2) {
+    color: var(--text2-color);
+}
