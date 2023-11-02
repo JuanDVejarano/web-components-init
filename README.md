@@ -29,6 +29,8 @@ El proeycto solo para visulizarlo en el navegador
 npm start
 ```
 
+En los ejemplos ya creados solo usamos sass en la carpeta **8-style-host-slotted**.
+
 # Agrere un coponente nuevo
 
 para esto se debe crear una carpeta con el nombre del componente y dentro de esta carpeta se debe crear un archivo con el nombre del componente y la extencion .js, tambien se puede crear un archivo .scss para los estilos del componente.
