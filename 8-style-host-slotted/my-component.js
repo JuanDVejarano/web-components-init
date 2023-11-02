@@ -39,61 +39,23 @@ class MyComponent extends HTMLElement {
                 <p>${this.parrafo}</p>
                 <slot name="texto1"></slot>
                 <slot name="texto2"></slot>
-            </section>
-            ${this.getStyles()}
-        `;
+            </section>`;
 
         return template;
     }
 
-    getStyles() {
-        const styles = `
-            <style>
-                :host {
-                    --primary-color: red;
-                    --secondary-color: blue;
-                    --tertiary-color: yellow;
-                    --cuarternary-color: purple;
-                    --text1-color: white;
-                    --text2-color: #20ff00;
-                    display: inline-block;
-                    background-color: var(--primary-color);
-                    min-width: 400px;
-                    margin: 10px;
-                    padding: 20px;
-                }
-                :host *{
-                    margin: 0;
-                    padding: 0;
-                }
-                :host(.blue) {
-                    background-color: var(--secondary-color);
-                }
-                :host([yellow]) {
-                    background-color: var(--tertiary-color);
-                }
-                :host-context(article.card) {
-                    display: block;
-                    max-width: 100%;
-                    background-color: var(--cuarternary-color);
-                }
-                ::slotted(span) {
-                    font-size: 30px;
-                }
-                ::slotted(.texto1) {
-                    color: var(--text1-color);
-                }
-                ::slotted(.texto2) {
-                    color: var(--text2-color);
-                }
-            </style>
-        `;
-        return styles;
+    async loadStyles() {
+        const res = await fetch("./my-component.css");
+        const css = await res.text();
+        const style = document.createElement("style");
+        style.textContent = css;
+        this.shadowRoot.appendChild(style);
     }
 
     render() {
         // Aquí se pueden agregar los elementos HTML y la lógica de inicialización del componente
         this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true));
+        this.loadStyles();
     }
 
     // Aquí se pueden definir otros métodos y propiedades del componente
