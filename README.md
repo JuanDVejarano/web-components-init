@@ -13,6 +13,12 @@ npm install
 El proyecto en modo dev donde nos creara un servidor local en el puerto 8080 y nos compilara el sass y el js
 en este caso tendremos que tener instlado sass en el sistema
 
+Para instalarlo usar el siguiente comando
+
+```bash
+npm install -g sass
+```
+
 ```bash
 npm run dev
 ```
